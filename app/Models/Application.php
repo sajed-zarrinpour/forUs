@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Application extends Model
 {
@@ -32,19 +33,13 @@ class Application extends Model
     ];
 
 
+    public function position() : BelongsTo
+    {
+        return $this->belongsTo(Position::class);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public static function closest_interviews()
+    {
+        return Position::orderByDesc('interview_at')->limit(10)->get();
+    }
 }
