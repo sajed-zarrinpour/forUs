@@ -1,0 +1,8 @@
+version: 1.0.0
+files:
+  - url: Laravel-1.0.0-setup.exe
+    sha512: 6jhJvRsXe83NOahfK4y9rv0VYeZzr4r9XvVupyFqQ38jgfiJps9w2ivGVLm+A2wBemc4nT50GgVmTdvgbvG2lg==
+    size: 95576074
+path: Laravel-1.0.0-setup.exe
+sha512: 6jhJvRsXe83NOahfK4y9rv0VYeZzr4r9XvVupyFqQ38jgfiJps9w2ivGVLm+A2wBemc4nT50GgVmTdvgbvG2lg==
+releaseDate: '2024-10-31T08:26:53.428Z'
