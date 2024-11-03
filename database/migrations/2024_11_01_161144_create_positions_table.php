@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('url');
             $table->string('title');
             $table->string('organazaion');
-            $table->srting('location')->nullable();
+            $table->string('location')->nullable();
             $table->string('apply_link')->nullable();
             $table->string('email')->nullable();
             $table->dateTime('deadline_at', precision: 0);
