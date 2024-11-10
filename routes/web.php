@@ -14,7 +14,12 @@ Route::get('/', function(){
 });
 
 // Route::middleware(['auth'])->get('/custom-page', [CustomPageController::class, 'index'])->name('custom.page');
-Route::middleware(['auth'])->get('menu-bar', function(){return view('menubar');})->name('menu-bar');
+Route::middleware(['auth'])->get('menu-bar', function(){
+    return view('menubar',[
+        'closest_deadlines' => Position::closest_dedlines(),
+        // 'closest_interview' => Application::closest_interviews()
+    ]);
+})->name('menu-bar');
 
 Route::post('/open-main-window', function () {
     Window::open()

@@ -45,7 +45,7 @@ class NativeAppServiceProvider implements ProvidesPhpIni
                 ->quit()
         )
         // Use the authenticated route here
-        ->route('custom.page');
+        ->route('menu-bar');
 
         Menu::new()
         ->appMenu()
