@@ -3,6 +3,7 @@
 use App\Http\Controllers\PositionController;
 use App\Livewire\Applications;
 use App\Livewire\Positions;
+use App\Livewire\SearchPositions;
 use App\Models\Application;
 use App\Models\Position;
 use App\Models\User;
@@ -41,7 +42,7 @@ Route::prefix('positions')->middleware([
 ])->group(function(){
     Route::get('/new', Positions::class)->name('positions.new');
     Route::get('{position}/edit/', Positions::class)->name('position.edit');
-
+    Route::get('/', SearchPositions::class)->name('search-positions');
     Route::prefix('{position}/applications')->group(function(){
         Route::get('/new', Applications::class)->name('application.new');
         Route::get('{application}/view', Applications::class)->name('application.view');

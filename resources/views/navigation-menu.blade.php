@@ -16,6 +16,16 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <!-- seperator -->
+                <div class="hidden space-x-8 sm:-my-px sm:flex items-center inline-flex items-center px-1 pt-1 border-b-2 border-indigo-400 dark:border-indigo-600 text-sm font-medium leading-5 text-gray-900 dark:text-gray-100 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out">|</div>
+                <!-- Positions -->
+                <div class="hidden space-x-8 sm:-my-px sm:flex">
+                    <x-nav-link href="{{ route('search-positions') }}" :active="request()->routeIs('search-positions')">
+                        {{ __('Positions') }}
+                    </x-nav-link>
+                </div>
+
+                {{-- @livewire('navigation-links') --}}
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ms-6">
