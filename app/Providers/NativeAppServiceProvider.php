@@ -15,37 +15,55 @@ class NativeAppServiceProvider implements ProvidesPhpIni
      */
     public function boot(): void
     {
-        MenuBar::create()
-            ->width(400)
-            ->height(600)
-            // ->showDockIcon()
-            ->label('ForUs')
-            ->icon(storage_path('app/menuBarIcon.png'))
-            ->withContextMenu(
-                Menu::new()
-                    ->label('My Application')
-                    ->separator()
-                    ->link('https://nativephp.com', 'Learn more…')
-                    ->separator()
-                    ->quit()
-            );
+        // MenuBar::create()
+        // ->width(400)
+        // ->height(600)
+        // // ->showDockIcon()
+        // ->label('ForUs')
+        // ->icon(storage_path('app/menuBarIcon.png'))
+        // ->withContextMenu(
+        //     Menu::new()
+        //     ->label('My Application')
+        //     ->separator()
+        //     ->link('https://nativephp.com', 'Learn more…')
+        //     ->separator()
+        //     ->quit()
+        // )
+        // ->route('menu-bar');
         
+        MenuBar::create()
+        ->width(400)
+        ->height(600)
+        ->label('ForUs')
+        ->icon(storage_path('app/menuBarIcon.png'))
+        ->withContextMenu(
+            Menu::new()
+                ->label('My Application')
+                ->separator()
+                ->link('https://nativephp.com', 'Learn more…')
+                ->separator()
+                ->quit()
+        )
+        // Use the authenticated route here
+        ->route('custom.page');
+
         Menu::new()
         ->appMenu()
             ->submenu('NativePHP', Menu::new()
                 ->link('https://nativephp.com', 'Documentation')
             )
             ->register();
-
+        
         Window::open()
-            ->width(800)
-            ->height(800)
-            ->title('ForUs')
-            ->route('home')
-            ->rememberState()
-            ->hideMenu();
+        ->width(800)
+        ->height(800)
+        ->title('ForUs')
+        ->route('home')
+        ->rememberState()
+        ->hideMenu();
+        
     }
-
+    
     /**
      * Return an array of php.ini directives to be set.
      */
