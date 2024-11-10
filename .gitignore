@@ -20,7 +20,9 @@ yarn-error.log
 /.idea
 /.vscode
 /.zed
+dist/*
 /dist/win-unpacked
 dist/builder-debug.yml
 dist/Laravel-1.0.1-setup.exe.blockmap
 dist/latest.yml
+dist/builder-debug.yml
