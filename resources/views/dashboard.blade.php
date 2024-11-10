@@ -66,9 +66,13 @@
                                         </div>
                                     </div>
                                     <div class="flex justify-end mt-4">
-                                        <a href="{{ route('application.new', ['position' => $item]) }}" class="text-blue-500 hover:text-blue-700 mr-2">New Application</a>
-                                        <a href="{{ route('position.edit', ['position' => $item]) }}" class="text-blue-500 hover:text-blue-700 mr-2">Update Position</a>
-                                        <button type="button" wire:click="deleteId({{ $item->id }})" class="text-red-500 hover:text-red-700">Delete</button>
+                                        @if ($item->application)
+                                            <a href="{{ route('application.view', ['position' => $item, 'application' => $item->application]) }}" class="text-blue-500 hover:text-blue-700 mr-2">View Application</a>
+                                            <a href="{{ route('position.edit', ['position' => $item]) }}" class="text-blue-500 hover:text-blue-700 mr-2">Update Position</a>
+                                            <button type="button" wire:click="deleteId({{ $item->id }})" class="text-red-500 hover:text-red-700">Delete</button>
+                                        @else
+                                            <a href="{{ route('application.new', ['position'=> $item]) }}" class="text-blue-500 hover:text-blue-700 mr-2">New Application</a>
+                                        @endif
                                     </div>
                                 </li>
                             @endforeach
@@ -114,11 +118,13 @@
                                         </div>
                                     </div>
                                     <div class="flex justify-end mt-4">
-                                        @isset($item->application)
+                                        @if ($item->application)
                                             <a href="{{ route('application.view', ['position' => $item, 'application' => $item->application]) }}" class="text-blue-500 hover:text-blue-700 mr-2">View Application</a>
                                             <a href="{{ route('application.edit', ['position' => $item, 'application' => $item->application]) }}" class="text-blue-500 hover:text-blue-700 mr-2">Update Application</a>
-                                        @endisset
-                                        <button type="button" wire:click="deleteId({{ $item->id }})" class="text-red-500 hover:text-red-700">Delete</button>
+                                            <button type="button" wire:click="deleteId({{ $item->id }})" class="text-red-500 hover:text-red-700">Delete</button>
+                                        @else
+                                            <a href="{{ route('application.new', ['position'=> $item]) }}" class="text-blue-500 hover:text-blue-700 mr-2">New Application</a>
+                                        @endif
                                     </div>
                                 </li>
                             @endforeach
