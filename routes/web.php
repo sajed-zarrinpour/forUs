@@ -21,7 +21,7 @@ Route::middleware(['auth'])->get('menu-bar', function(){
     ]);
 })->name('menu-bar');
 
-Route::post('/open-main-window', function () {
+Route::get('open-main-window', function () {
     Window::open()
         ->width(800)
         ->height(800)
@@ -29,8 +29,8 @@ Route::post('/open-main-window', function () {
         ->route('dashboard')
         ->rememberState()
         ->hideMenu();
-    return response()->json(['status' => 'Main application window opened']);
-})->middleware('auth');
+    return back();
+})->middleware('auth')->name('open-main-window');
 
 
 // Route::get('/', [PositionController::class, 'index'])->name('position.index');
