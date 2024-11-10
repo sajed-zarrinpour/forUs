@@ -29,9 +29,7 @@ class Positions extends Component
     }
     public function render()
     {
-        return view('livewire.positions',[
-            'positions' => Position::all()
-        ]);
+        return view('livewire.positions');
     }
 
 
