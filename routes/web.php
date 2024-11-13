@@ -9,6 +9,9 @@ use App\Models\Position;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use Native\Laravel\Facades\Window;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Storage;
 
 Route::get('/', function(){
     return redirect('/login');
@@ -64,10 +67,30 @@ Route::middleware([
             'closest_interview' => Application::closest_interviews()
         ]);
     })->name('dashboard');
+    
+    Route::get('/files',function(Request $request){
+        $filename = $request->query('filepath');
+        return response( Storage::disk('public')->get($filename), 200, [
+            'Content-Type' => 'application/pdf',
+            'Content-Disposition' => 'inline; filename="'.$filename.'"'
+        ]);
+    })->name('serve');
+
+    Route::get('/temp-files',function(Request $request){
+        $filename = $request->query('filepath');
+        $path = storage_path($filename);
+
+        dd(Storage::temporaryUrl($filename, now()->addDay()));
+        return response( Storage::disk('public')->get($filename), 200, [
+            'Content-Type' => 'application/pdf',
+            'Content-Disposition' => 'inline; filename="'.$filename.'"'
+        ]);
+        
+    })->name('serve-temp');
 });
 
 
-use Illuminate\Http\Request;
+
 
 Route::post('/set-theme/{theme}', function ($theme, Request $request) {
     if (in_array($theme, ['light', 'dark'])) {
@@ -75,3 +98,4 @@ Route::post('/set-theme/{theme}', function ($theme, Request $request) {
     }
     return response()->json(['success' => true]);
 });
+
