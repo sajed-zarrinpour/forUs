@@ -46,15 +46,17 @@
                                                 <a href="{!! $item->url !!}">{{ $item->title }}</a>
                                             </div>
                                             <div class="text-sm">
-                                                <p class="text-gray-900 dark:text-gray-300 leading-none">
-                                                    @isset($item->apply_link)
-                                                        <span>Apply Link</span>
+                                                @isset($item->apply_link)
+                                                    <p class="py-1 text-gray-900 dark:text-gray-300 leading-none">
+                                                        <span class="py-2">Apply Link:</span><br>
                                                         <a href="{!! $item->apply_link !!}" class="exotic-links text-blue-500 hover:text-blue-700">{!! $item->apply_link !!}</a>
+                                                    </p><hr>
                                                     @endisset
                                                     @isset($item->email)
+                                                    <p class="py-1 text-gray-900 dark:text-gray-300 leading-none">
                                                         <span class="ml-2">{{ $item->email }}</span>
+                                                    </p>
                                                     @endisset
-                                                </p>
                                                 <p class="text-gray-600 dark:text-gray-400">Created At: {{ $item->created_at }}</p>
                                                 <p class="text-gray-600 dark:text-gray-400">Updated At: {{ $item->updated_at }}</p>
                                             </div>

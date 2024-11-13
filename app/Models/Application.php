@@ -40,6 +40,11 @@ class Application extends Model
 
     public static function closest_interviews()
     {
-        return Position::orderByDesc('interview_at')->limit(10)->get();
+        $out = [];
+        $applications = Application::whereNotNull('interview_at')->orderByDesc('interview_at')->limit(10)->get();
+        foreach ($applications as $application) {
+            $out[]=$application->position;
+        }
+        return $out;
     }
 }
