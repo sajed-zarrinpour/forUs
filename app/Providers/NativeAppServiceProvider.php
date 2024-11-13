@@ -55,8 +55,8 @@ class NativeAppServiceProvider implements ProvidesPhpIni
             ->register();
         
         Window::open()
-        ->width(800)
-        ->height(800)
+        ->minWidth(1200)
+        ->minHeight(800)
         ->title('ForUs')
         ->route('home')
         ->rememberState()
