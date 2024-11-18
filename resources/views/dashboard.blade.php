@@ -57,8 +57,13 @@
                                                         <span class="ml-2">{{ $item->email }}</span>
                                                     </p>
                                                     @endisset
-                                                <p class="text-gray-600 dark:text-gray-400">Created At: {{ $item->created_at }}</p>
-                                                <p class="text-gray-600 dark:text-gray-400">Updated At: {{ $item->updated_at }}</p>
+                                                @isset($item->application)
+                                                    
+                                                <p class="text-gray-600 dark:text-gray-400">Interview At: {{ $item->application->interview_at ." (" . \Carbon\Carbon::parse($item->application->interview_at)->diffForHumans() .")"}}</p>
+                                                @endisset
+                                                    
+
+                                                {{-- <p class="text-gray-600 dark:text-gray-400">Updated At: {{ $item->updated_at }}</p> --}}
                                             </div>
                                         </div>
                                         <div class="flex-none">

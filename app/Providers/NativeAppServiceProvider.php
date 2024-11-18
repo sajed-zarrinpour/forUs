@@ -32,7 +32,7 @@ class NativeAppServiceProvider implements ProvidesPhpIni
         // ->route('menu-bar');
         
         MenuBar::create()
-        ->width(400)
+        ->width(500)
         ->height(600)
         ->label('ForUs')
         ->icon(storage_path('app/menuBarIcon.png'))
@@ -44,6 +44,8 @@ class NativeAppServiceProvider implements ProvidesPhpIni
                 ->separator()
                 ->quit()
         )
+        // ->alwaysOnTop()
+        ->trayBottomRight()
         // Use the authenticated route here
         ->route('menu-bar');
 
@@ -54,7 +56,7 @@ class NativeAppServiceProvider implements ProvidesPhpIni
             )
             ->register();
         
-        Window::open()
+        Window::open('primary')
         ->minWidth(1200)
         ->minHeight(800)
         ->title('ForUs')
