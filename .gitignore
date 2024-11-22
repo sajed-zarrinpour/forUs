@@ -26,3 +26,5 @@ dist/builder-debug.yml
 dist/Laravel-1.0.1-setup.exe.blockmap
 dist/latest.yml
 dist/builder-debug.yml
+composer.lock
+package-lock.json
