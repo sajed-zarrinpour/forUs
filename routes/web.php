@@ -9,9 +9,11 @@ use App\Models\Position;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use Native\Laravel\Facades\Window;
+
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
+use Native\Laravel\Windows\Window as WindowsWindow;
 
 Route::get('/', function(){
     return redirect('/login');
@@ -21,18 +23,22 @@ Route::get('/', function(){
 Route::middleware(['auth'])->get('menu-bar', function(){
     return view('menubar',[
         'closest_deadlines' => Position::closest_dedlines(),
-        // 'closest_interview' => Application::closest_interviews()
+        'closest_interview' => Application::closest_interviews()
     ]);
 })->name('menu-bar');
 
-Route::get('open-main-window', function () {
-    Window::open()
-        ->width(800)
+Route::get('open-main-window/{name}', function ($name) {
+    Window::close('primary');
+    Window::open('primary')
+        ->width(400)
         ->height(800)
         ->title('ForUs - Main Application')
-        ->route('dashboard')
+        ->route($name)
         ->rememberState()
         ->hideMenu();
+        
+    Window::get('primary')->url(route($name));
+        
     return back();
 })->middleware('auth')->name('open-main-window');
 

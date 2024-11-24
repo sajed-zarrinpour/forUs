@@ -44,6 +44,8 @@ class NativeAppServiceProvider implements ProvidesPhpIni
                 ->separator()
                 ->quit()
         )
+        // ->alwaysOnTop()
+        ->trayBottomRight()
         // Use the authenticated route here
         ->route('menu-bar');
 
@@ -54,7 +56,7 @@ class NativeAppServiceProvider implements ProvidesPhpIni
             )
             ->register();
         
-        Window::open()
+        Window::open('primary')
         ->minWidth(1200)
         ->minHeight(800)
         ->title('ForUs')
