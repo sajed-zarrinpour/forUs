@@ -1,0 +1,1248 @@
+[2024-11-22 17:36:52] local.ERROR: Route [home] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [home] not defined. at /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:516)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(853): Illuminate\\Routing\\UrlGenerator->route('home', Array, true)
+#1 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Concerns/HasUrl.php(18): route('home', Array)
+#2 /home/sajed/Documents/apply/forus/app/Providers/NativeAppServiceProvider.php(61): Native\\Laravel\\Windows\\Window->route('home')
+#3 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Controllers/NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#5 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(264): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#6 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(210): Illuminate\\Routing\\Route->runController()
+#7 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Middleware/PreventRegularBrowserAccess.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#13 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#14 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#15 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#16 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#17 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 /home/sajed/Documents/apply/forus/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#41 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('/home/sajed/Doc...')
+#42 {main}
+"} 
+[2024-11-22 17:36:53] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:36:53] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:36:57] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:36:59] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:37:01] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:37:01] local.ERROR: Unable to call component method. Public method [delete] not found on component {"userId":1,"exception":"[object] (Livewire\\Exceptions\\MethodNotFoundException(code: 0): Unable to call component method. Public method [delete] not found on component at /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Mechanisms/HandleComponents/HandleComponents.php:470)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Mechanisms/HandleComponents/HandleComponents.php(101): Livewire\\Mechanisms\\HandleComponents\\HandleComponents->callMethods(Object(App\\Livewire\\SearchPositions), Array, Object(Livewire\\Mechanisms\\HandleComponents\\ComponentContext))
+#1 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/LivewireManager.php(97): Livewire\\Mechanisms\\HandleComponents\\HandleComponents->update(Array, Array, Array)
+#2 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Mechanisms/HandleRequests/HandleRequests.php(94): Livewire\\LivewireManager->update(Array, Array, Array)
+#3 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): Livewire\\Mechanisms\\HandleRequests\\HandleRequests->handleUpdate()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(264): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Livewire\\Mechanisms\\HandleRequests\\HandleRequests), 'handleUpdate')
+#5 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(210): Illuminate\\Routing\\Route->runController()
+#6 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
+#7 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(88): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#16 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(75): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#23 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#24 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#25 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#26 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#27 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(47): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#46 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#47 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#48 /home/sajed/Documents/apply/forus/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#49 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('/home/sajed/Doc...')
+#50 {main}
+"} 
+[2024-11-22 17:37:04] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:37:28] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:38:08] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:39:00] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:39:14] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:40:42] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:40:50] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:44:15] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:44:17] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:44:17] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:44:17] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:44:20] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:44:21] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:44:21] local.ERROR: Unable to call component method. Public method [delete] not found on component {"userId":1,"exception":"[object] (Livewire\\Exceptions\\MethodNotFoundException(code: 0): Unable to call component method. Public method [delete] not found on component at /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Mechanisms/HandleComponents/HandleComponents.php:470)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Mechanisms/HandleComponents/HandleComponents.php(101): Livewire\\Mechanisms\\HandleComponents\\HandleComponents->callMethods(Object(App\\Livewire\\SearchPositions), Array, Object(Livewire\\Mechanisms\\HandleComponents\\ComponentContext))
+#1 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/LivewireManager.php(97): Livewire\\Mechanisms\\HandleComponents\\HandleComponents->update(Array, Array, Array)
+#2 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Mechanisms/HandleRequests/HandleRequests.php(94): Livewire\\LivewireManager->update(Array, Array, Array)
+#3 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): Livewire\\Mechanisms\\HandleRequests\\HandleRequests->handleUpdate()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(264): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Livewire\\Mechanisms\\HandleRequests\\HandleRequests), 'handleUpdate')
+#5 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(210): Illuminate\\Routing\\Route->runController()
+#6 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
+#7 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(88): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#16 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(75): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#23 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#24 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#25 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#26 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#27 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(47): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#46 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#47 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#48 /home/sajed/Documents/apply/forus/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#49 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('/home/sajed/Doc...')
+#50 {main}
+"} 
+[2024-11-22 17:44:30] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:45:22] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:45:26] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowClosed] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:45:27] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:45:30] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:45:30] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:45:30] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:45:36] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowMaximized] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:45:38] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:45:40] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:45:41] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:45:45] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:45:57] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:46:53] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:46:55] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:54:53] local.ERROR: TTY mode requires /dev/tty to be read/writable. {"exception":"[object] (Symfony\\Component\\Process\\Exception\\RuntimeException(code: 0): TTY mode requires /dev/tty to be read/writable. at /home/sajed/Documents/apply/forus/vendor/symfony/process/Process.php:1048)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Process/PendingProcess.php(321): Symfony\\Component\\Process\\Process->setTty()
+#1 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Process/PendingProcess.php(249): Illuminate\\Process\\PendingProcess->toSymfonyProcess()
+#2 /home/sajed/Documents/apply/forus/vendor/nativephp/electron/src/Traits/ExecuteCommand.php(37): Illuminate\\Process\\PendingProcess->run()
+#3 /home/sajed/Documents/apply/forus/vendor/nativephp/electron/src/Traits/Installer.php(35): Native\\Electron\\Commands\\DevelopCommand->executeCommand()
+#4 /home/sajed/Documents/apply/forus/vendor/nativephp/electron/src/Traits/Installer.php(24): Native\\Electron\\Commands\\DevelopCommand->installDependencies()
+#5 /home/sajed/Documents/apply/forus/vendor/nativephp/electron/src/Commands/DevelopCommand.php(26): Native\\Electron\\Commands\\DevelopCommand->installNPMDependencies()
+#6 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Native\\Electron\\Commands\\DevelopCommand->handle()
+#7 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure()
+#9 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#10 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Container/Container.php(690): Illuminate\\Container\\BoundMethod::call()
+#11 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Console/Command.php(213): Illuminate\\Container\\Container->call()
+#12 /home/sajed/Documents/apply/forus/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute()
+#13 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Symfony\\Component\\Console\\Command\\Command->run()
+#14 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(1047): Illuminate\\Console\\Command->run()
+#15 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(316): Symfony\\Component\\Console\\Application->doRunCommand()
+#16 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun()
+#17 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#18 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1205): Illuminate\\Foundation\\Console\\Kernel->handle()
+#19 /home/sajed/Documents/apply/forus/artisan(13): Illuminate\\Foundation\\Application->handleCommand()
+#20 {main}
+"} 
+[2024-11-22 17:54:59] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:55:07] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:55:09] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:55:14] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:55:14] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:55:22] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:55:48] local.ERROR: Route [home] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [home] not defined. at /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:516)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(853): Illuminate\\Routing\\UrlGenerator->route('home', Array, true)
+#1 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Concerns/HasUrl.php(18): route('home', Array)
+#2 /home/sajed/Documents/apply/forus/app/Providers/NativeAppServiceProvider.php(61): Native\\Laravel\\Windows\\Window->route('home')
+#3 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Controllers/NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#5 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(264): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#6 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(210): Illuminate\\Routing\\Route->runController()
+#7 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Middleware/PreventRegularBrowserAccess.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#13 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#14 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#15 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#16 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#17 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 /home/sajed/Documents/apply/forus/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#41 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('/home/sajed/Doc...')
+#42 {main}
+"} 
+[2024-11-22 17:55:49] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:55:49] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:55:50] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:55:50] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:55:52] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:55:52] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:55:52] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:55:52] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:55:59] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:56:17] local.ERROR: Route [home] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [home] not defined. at /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:516)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(853): Illuminate\\Routing\\UrlGenerator->route('home', Array, true)
+#1 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Concerns/HasUrl.php(18): route('home', Array)
+#2 /home/sajed/Documents/apply/forus/app/Providers/NativeAppServiceProvider.php(61): Native\\Laravel\\Windows\\Window->route('home')
+#3 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Controllers/NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#5 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(264): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#6 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(210): Illuminate\\Routing\\Route->runController()
+#7 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Middleware/PreventRegularBrowserAccess.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#13 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#14 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#15 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#16 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#17 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 /home/sajed/Documents/apply/forus/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#41 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('/home/sajed/Doc...')
+#42 {main}
+"} 
+[2024-11-22 17:56:18] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:56:18] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:56:19] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:56:19] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:56:24] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:56:24] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:56:25] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:56:34] local.ERROR: Route [home] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [home] not defined. at /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:516)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(853): Illuminate\\Routing\\UrlGenerator->route('home', Array, true)
+#1 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Concerns/HasUrl.php(18): route('home', Array)
+#2 /home/sajed/Documents/apply/forus/app/Providers/NativeAppServiceProvider.php(61): Native\\Laravel\\Windows\\Window->route('home')
+#3 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Controllers/NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#5 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(264): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#6 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(210): Illuminate\\Routing\\Route->runController()
+#7 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Middleware/PreventRegularBrowserAccess.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#13 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#14 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#15 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#16 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#17 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 /home/sajed/Documents/apply/forus/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#41 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('/home/sajed/Doc...')
+#42 {main}
+"} 
+[2024-11-22 17:56:34] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:56:34] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:56:36] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:56:36] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:56:39] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:56:50] local.ERROR: Route [home] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [home] not defined. at /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:516)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(853): Illuminate\\Routing\\UrlGenerator->route('home', Array, true)
+#1 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Concerns/HasUrl.php(18): route('home', Array)
+#2 /home/sajed/Documents/apply/forus/app/Providers/NativeAppServiceProvider.php(61): Native\\Laravel\\Windows\\Window->route('home')
+#3 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Controllers/NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#5 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(264): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#6 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(210): Illuminate\\Routing\\Route->runController()
+#7 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Middleware/PreventRegularBrowserAccess.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#13 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#14 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#15 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#16 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#17 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 /home/sajed/Documents/apply/forus/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#41 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('/home/sajed/Doc...')
+#42 {main}
+"} 
+[2024-11-22 17:56:51] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:56:51] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:56:52] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:56:52] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:57:06] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:57:06] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 17:57:18] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:57:24] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 17:57:27] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:01:00] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:01:03] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:01:18] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:01:18] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:01:24] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:01:24] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:01:25] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowClosed] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:01:28] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:01:35] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:01:38] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:01:46] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:02:01] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:02:22] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:02:30] local.ERROR: TTY mode requires /dev/tty to be read/writable. {"exception":"[object] (Symfony\\Component\\Process\\Exception\\RuntimeException(code: 0): TTY mode requires /dev/tty to be read/writable. at /home/sajed/Documents/apply/forus/vendor/symfony/process/Process.php:1048)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Process/PendingProcess.php(321): Symfony\\Component\\Process\\Process->setTty()
+#1 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Process/PendingProcess.php(249): Illuminate\\Process\\PendingProcess->toSymfonyProcess()
+#2 /home/sajed/Documents/apply/forus/vendor/nativephp/electron/src/Traits/ExecuteCommand.php(37): Illuminate\\Process\\PendingProcess->run()
+#3 /home/sajed/Documents/apply/forus/vendor/nativephp/electron/src/Traits/Installer.php(35): Native\\Electron\\Commands\\DevelopCommand->executeCommand()
+#4 /home/sajed/Documents/apply/forus/vendor/nativephp/electron/src/Traits/Installer.php(24): Native\\Electron\\Commands\\DevelopCommand->installDependencies()
+#5 /home/sajed/Documents/apply/forus/vendor/nativephp/electron/src/Commands/DevelopCommand.php(26): Native\\Electron\\Commands\\DevelopCommand->installNPMDependencies()
+#6 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Native\\Electron\\Commands\\DevelopCommand->handle()
+#7 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure()
+#9 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#10 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Container/Container.php(690): Illuminate\\Container\\BoundMethod::call()
+#11 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Console/Command.php(213): Illuminate\\Container\\Container->call()
+#12 /home/sajed/Documents/apply/forus/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute()
+#13 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Symfony\\Component\\Console\\Command\\Command->run()
+#14 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(1047): Illuminate\\Console\\Command->run()
+#15 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(316): Symfony\\Component\\Console\\Application->doRunCommand()
+#16 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun()
+#17 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#18 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1205): Illuminate\\Foundation\\Console\\Kernel->handle()
+#19 /home/sajed/Documents/apply/forus/artisan(13): Illuminate\\Foundation\\Application->handleCommand()
+#20 {main}
+"} 
+[2024-11-22 18:02:54] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:03:00] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:04:11] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:04:27] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:04:42] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:04:53] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:05:07] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:05:14] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:05:29] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:05:35] local.ERROR: Route [home] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [home] not defined. at /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:516)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(853): Illuminate\\Routing\\UrlGenerator->route('home', Array, true)
+#1 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Concerns/HasUrl.php(18): route('home', Array)
+#2 /home/sajed/Documents/apply/forus/app/Providers/NativeAppServiceProvider.php(61): Native\\Laravel\\Windows\\Window->route('home')
+#3 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Controllers/NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#5 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(264): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#6 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(210): Illuminate\\Routing\\Route->runController()
+#7 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Middleware/PreventRegularBrowserAccess.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#13 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#14 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#15 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#16 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#17 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 /home/sajed/Documents/apply/forus/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#41 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('/home/sajed/Doc...')
+#42 {main}
+"} 
+[2024-11-22 18:05:36] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:05:36] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:05:38] local.ERROR: Route [home] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [home] not defined. at /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:516)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(853): Illuminate\\Routing\\UrlGenerator->route('home', Array, true)
+#1 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Concerns/HasUrl.php(18): route('home', Array)
+#2 /home/sajed/Documents/apply/forus/app/Providers/NativeAppServiceProvider.php(61): Native\\Laravel\\Windows\\Window->route('home')
+#3 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Controllers/NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#5 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(264): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#6 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(210): Illuminate\\Routing\\Route->runController()
+#7 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Middleware/PreventRegularBrowserAccess.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#13 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#14 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#15 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#16 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#17 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 /home/sajed/Documents/apply/forus/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#41 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('/home/sajed/Doc...')
+#42 {main}
+"} 
+[2024-11-22 18:05:38] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:05:38] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:05:38] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:05:44] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:05:44] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:05:46] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarShown] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:05:46] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:05:49] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:05:49] local.INFO: Broadcasting [Native\Laravel\Events\MenuBar\MenuBarHidden] on channels [nativephp] with payload:
+{
+    "socket": null
+}  
+[2024-11-22 18:05:53] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:05:53] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowClosed] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:06:03] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowMaximized] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:06:08] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:06:14] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:06:18] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:06:37] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:06:52] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:06:56] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:07:02] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:07:05] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:07:09] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:07:14] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:07:19] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:07:21] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:07:23] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:07:24] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:07:26] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:07:28] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:07:31] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:07:36] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:07:40] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:10:10] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:10:14] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:10:17] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:10:21] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:10:23] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:10:28] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:10:31] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:10:38] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:10:43] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:11:17] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:11:36] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:12:38] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:12:44] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-22 18:12:48] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowBlurred] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-23 19:50:14] local.ERROR: Route [home] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [home] not defined. at /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:516)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(853): Illuminate\\Routing\\UrlGenerator->route('home', Array, true)
+#1 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Concerns/HasUrl.php(18): route('home', Array)
+#2 /home/sajed/Documents/apply/forus/app/Providers/NativeAppServiceProvider.php(61): Native\\Laravel\\Windows\\Window->route('home')
+#3 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Controllers/NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#5 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(264): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#6 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Route.php(210): Illuminate\\Routing\\Route->runController()
+#7 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 /home/sajed/Documents/apply/forus/vendor/nativephp/laravel/src/Http/Middleware/PreventRegularBrowserAccess.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#13 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#14 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#15 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#16 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#17 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sajed/Documents/apply/forus/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 /home/sajed/Documents/apply/forus/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#41 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('/home/sajed/Doc...')
+#42 {main}
+"} 
+[2024-11-23 19:50:18] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowShown] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-23 19:50:18] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowFocused] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-23 19:50:27] local.INFO: Broadcasting [Native\Laravel\Events\Windows\WindowClosed] on channels [nativephp] with payload:
+{
+    "id": "main",
+    "socket": null
+}  
+[2024-11-23 19:55:10] local.ERROR: No arguments expected for "native:serve" command, got "2>&1&". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): No arguments expected for \"native:serve\" command, got \"2>&1&\". at /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/ArgvInput.php:193)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/ArgvInput.php(86): Symfony\\Component\\Console\\Input\\ArgvInput->parseArgument()
+#1 /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#2 /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/Input.php(53): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 /home/sajed/Documents/apply/forus/vendor/symfony/console/Command/Command.php(238): Symfony\\Component\\Console\\Input\\Input->bind()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Symfony\\Component\\Console\\Command\\Command->run()
+#5 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(1047): Illuminate\\Console\\Command->run()
+#6 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(316): Symfony\\Component\\Console\\Application->doRunCommand()
+#7 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#9 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1205): Illuminate\\Foundation\\Console\\Kernel->handle()
+#10 /home/sajed/Documents/apply/forus/artisan(13): Illuminate\\Foundation\\Application->handleCommand()
+#11 {main}
+"} 
+[2024-11-23 19:58:55] local.ERROR: No arguments expected for "native:serve" command, got "&". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): No arguments expected for \"native:serve\" command, got \"&\". at /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/ArgvInput.php:193)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/ArgvInput.php(86): Symfony\\Component\\Console\\Input\\ArgvInput->parseArgument()
+#1 /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#2 /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/Input.php(53): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 /home/sajed/Documents/apply/forus/vendor/symfony/console/Command/Command.php(238): Symfony\\Component\\Console\\Input\\Input->bind()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Symfony\\Component\\Console\\Command\\Command->run()
+#5 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(1047): Illuminate\\Console\\Command->run()
+#6 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(316): Symfony\\Component\\Console\\Application->doRunCommand()
+#7 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#9 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1205): Illuminate\\Foundation\\Console\\Kernel->handle()
+#10 /home/sajed/Documents/apply/forus/artisan(13): Illuminate\\Foundation\\Application->handleCommand()
+#11 {main}
+"} 
+[2024-11-24 16:08:29] local.ERROR: No arguments expected for "native:serve" command, got "&". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): No arguments expected for \"native:serve\" command, got \"&\". at /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/ArgvInput.php:193)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/ArgvInput.php(86): Symfony\\Component\\Console\\Input\\ArgvInput->parseArgument()
+#1 /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#2 /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/Input.php(53): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 /home/sajed/Documents/apply/forus/vendor/symfony/console/Command/Command.php(238): Symfony\\Component\\Console\\Input\\Input->bind()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Symfony\\Component\\Console\\Command\\Command->run()
+#5 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(1047): Illuminate\\Console\\Command->run()
+#6 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(316): Symfony\\Component\\Console\\Application->doRunCommand()
+#7 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#9 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1205): Illuminate\\Foundation\\Console\\Kernel->handle()
+#10 /home/sajed/Documents/apply/forus/artisan(13): Illuminate\\Foundation\\Application->handleCommand()
+#11 {main}
+"} 
+[2024-11-24 16:36:39] local.ERROR: No arguments expected for "native:serve" command, got "&". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): No arguments expected for \"native:serve\" command, got \"&\". at /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/ArgvInput.php:193)
+[stacktrace]
+#0 /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/ArgvInput.php(86): Symfony\\Component\\Console\\Input\\ArgvInput->parseArgument()
+#1 /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#2 /home/sajed/Documents/apply/forus/vendor/symfony/console/Input/Input.php(53): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 /home/sajed/Documents/apply/forus/vendor/symfony/console/Command/Command.php(238): Symfony\\Component\\Console\\Input\\Input->bind()
+#4 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Symfony\\Component\\Console\\Command\\Command->run()
+#5 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(1047): Illuminate\\Console\\Command->run()
+#6 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(316): Symfony\\Component\\Console\\Application->doRunCommand()
+#7 /home/sajed/Documents/apply/forus/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun()
+#8 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#9 /home/sajed/Documents/apply/forus/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1205): Illuminate\\Foundation\\Console\\Kernel->handle()
+#10 /home/sajed/Documents/apply/forus/artisan(13): Illuminate\\Foundation\\Application->handleCommand()
+#11 {main}
+"} 

@@ -33,7 +33,7 @@ class NativeAppServiceProvider implements ProvidesPhpIni
         
         MenuBar::create()
         ->width(400)
-        ->height(600)
+        ->height(870)
         ->label('ForUs')
         ->icon(storage_path('app/menuBarIcon.png'))
         ->withContextMenu(

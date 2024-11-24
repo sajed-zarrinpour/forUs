@@ -48,4 +48,9 @@ class SearchPositions extends Component
             'positions' => $positions,
         ]);
     }
+
+    public function delete($id)
+    {
+        Position::find($id)->delete();
+    }
 }

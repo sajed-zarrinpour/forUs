@@ -36,6 +36,11 @@ class Applications extends Component
     {
         return view('livewire.applications', ['position_id'=>$this->form->position_id]);
     }
+
+    public function delete($id)
+    {
+        Application::find($id)->delete();
+    }
 }
 
 
